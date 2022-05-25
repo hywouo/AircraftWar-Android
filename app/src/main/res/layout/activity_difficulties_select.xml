@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_difficulties_select"
+        tools:layout_editor_absoluteX="-79dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="183dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="10dp"
+            android:text="难度选择"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnEasy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375" />
+
+        <Button
+            android:id="@+id/btnEasy"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="20dp"
+            android:text="Easy"
+            app:layout_constraintBottom_toTopOf="@+id/btnNormal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnHard"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="20dp"
+            android:text="HARD"
+            app:layout_constraintBottom_toTopOf="@+id/btnLunatic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnNormal" />
+
+        <Button
+            android:id="@+id/btnNormal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="20dp"
+            android:text="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnHard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEasy" />
+
+        <Button
+            android:id="@+id/btnLunatic"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="24dp"
+            android:text="lunatic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
